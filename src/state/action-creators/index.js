@@ -1,3 +1,5 @@
+// it sends the required action details to reducer
+
 export const depositMoney = (amount) => {
     return (dispatch) => {
         dispatch({
