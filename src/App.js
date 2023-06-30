@@ -14,8 +14,8 @@ function App() {
         <Navbar />
         
         <Routes>
-          <Route exact path="/" element={<Shop />} />
-          <Route exact path="/about" element={<About />} />
+          <Route exact path="ReduxApp/" element={<Shop />} />
+          <Route exact path="ReduxApp/about" element={<About />} />
         </Routes>
       </Router>
 
