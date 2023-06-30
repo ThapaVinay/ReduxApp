@@ -9,18 +9,18 @@ const Shop = () => {
     const actions = bindActionCreators(actionCreators, dispatch);
 
     return (
-        <div>
-            <h3>Deposit/ Withdraw Money</h3>
-            <h3>Deposit/ Withdraw Money</h3>
+        <div className='container' style={{ marginTop: "100px", textAlign: "center" }}>
+            <h3> <strong>Deposit/ Withdraw Money</strong></h3>
 
-            {/* <button className="btn btn-primary mx-2" onClick={ () => { dispatch(actionCreators.withdrawMoney(100))}} > - </button> */}
-            <button className="btn btn-primary mx-2" onClick={() => { actions.withdrawMoney(100) }} > - </button>
+            <div className="container" style={{ marginTop: "20px", marginBottom:"330px"}}>
+                {/* <button className="btn btn-pri  mary mx-2" onClick={ () => { dispatch(actionCreators.withdrawMoney(100))}} > - </button> */}
+                <button className="btn btn-danger mx-2" onClick={() => { actions.withdrawMoney(100) }} > <strong>-</strong></button>
 
-            Update Balance
+                <strong> Update Balance </strong>
 
-            {/* <button className="btn btn-primary mx-2" onClick={ () => { dispatch(actionCreators.depositMoney(100))}} > + </button> */}
-            <button className="btn btn-primary mx-2" onClick={() => { actions.depositMoney(100) }} > + </button>
-
+                {/* <button className="btn btn-primary mx-2" onClick={ () => { dispatch(actionCreators.depositMoney(100))}} > + </button> */}
+                <button className="btn btn-success mx-2" onClick={() => { actions.depositMoney(100) }} > <strong>+</strong> </button>
+            </div>
         </div >
     )
 }
